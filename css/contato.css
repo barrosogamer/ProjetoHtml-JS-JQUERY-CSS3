@@ -1,0 +1,105 @@
+/*Contato*/
+
+/*Corpo*/
+body {}
+.s_form {
+    margin-bottom: 0;
+    padding-bottom: 4em;
+    width: 80%;
+    height: 100%;
+    box-shadow: 0 0 5px black;
+
+}
+/*Formulario*/
+#contato {
+    padding: 1em;
+    width: 75%;
+    height: 90%;
+    background: #708090;
+}
+
+.pisca {
+    animation: listrado 2s;
+
+    animation-iteration-count: infinite;
+    transition: 2s;
+}
+
+#b_form {
+    border-radius: 1em;
+    width: 100%;
+    height: 20vh;
+    background: #436EEE;
+    font-size: 1.5em;
+    margin-top: 2em;
+    transition: 1s;
+}
+#b_form:hover{
+    color: white;
+    background: #000000;
+    border-radius: 0em;
+    transform: scale(1.02);
+}
+
+
+
+/*Elementos de Formulario*/
+label {
+    color: #fff;
+    padding: 1em;
+    width: 100%;
+}
+
+input {
+    background: white;
+    margin: 1em;
+    padding: 1em;
+    width: 90%;
+
+
+}
+
+input:hover,
+input:focus {
+    background: #00CED1;
+}
+
+/*Classes de Formularios Dinamicas*/
+.erro {
+    background-color: #FF6347;
+}
+
+.refaz {
+    background-color: white;
+}
+
+/*Elementos Especificos*/
+/*fone*/
+#ddd {
+    width: 5%;
+}
+
+#numero {
+    width: 20%;
+}
+
+.fone {
+    width: 30%;
+}
+
+/*Assunto*/
+#textarea {
+    width: 60%;
+}
+
+/*Animações*/
+@keyframes listrado {
+    0% {}
+
+    50% {
+
+        transform: scale(1.02);
+    }
+
+    100% {}
+}

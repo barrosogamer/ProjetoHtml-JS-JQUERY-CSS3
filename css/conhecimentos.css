@@ -1,0 +1,274 @@
+/*CSS Conhecimentos*/
+/*Corpo*/
+.conteudo-conhecimento{
+	height: 170vh;
+}
+
+/*Seções*/
+/*Css*/
+.css-exemplos{
+	
+}
+
+.exemplocss{
+	display: inline-block;
+	margin: 2em;
+	width:20vh;
+	height:20vh;
+	background: #4682B4;
+}
+
+/*exemplos Css*/
+#css1{
+
+      animation: quadrado-circulo 3s;
+      animation-iteration-count: infinite;
+
+      
+      
+}
+
+#css2{
+		animation:aumenta 4s;
+		animation-iteration-count: infinite;
+
+}
+#css3{
+    
+	transition:.1s;
+      animation:roda-quadrado 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+
+
+}
+#css4{
+  
+    transition: 0.5s;
+    animation: quadrado-3d 2s;
+    animation-iteration-count: infinite;
+}
+/*Seção Codigo explicado*/
+#cmt{
+	padding: 1em;
+	margin: auto;
+	animation:listrado 2s;
+	animation-iteration-count: infinite;
+}
+/*Seção do Jquey*/
+figure{
+	display: inline-block;
+}
+/*Slide*/
+#slide { 
+width: 15em;  
+height: 15em;
+overflow: hidden;
+box-shadow: 0 0 8px #000;
+position: relative;
+margin:1em; 
+}
+#slide img {
+z-index: 1;
+display: none;
+}
+/*Move Jquery*/
+#img-jq{
+	position: relative;
+	width:15em;
+	height:20vh;
+}
+.pos{
+
+}
+.pad{
+	animation:movejq 2.2s;
+}
+.pad2{
+	left:200px;
+	transform: scale(2);
+	animation:cresce 2s;
+}
+/*animações*/
+/*exemplos Css*/
+
+
+@keyframes andadireita{
+    0%{
+        transform:translateX(0px);
+    }
+    100%{
+        transform: translate(100px,20px);
+    }
+}
+@keyframes quadrado-circulo{
+	0%{
+
+	}
+	50%{
+        
+       border-radius:100%;
+       background: black;
+	}
+	
+}
+
+@keyframes aumenta{
+	0%{
+
+        transform: scale(0.1);
+	}
+	40%{
+		opacity: 1;
+
+		transform: scale(1);
+	}
+	41%{
+		opacity: 0;
+		transform: scale(0);
+		border-radius: 0%;
+	}
+	42%{
+		opacity: 1;
+		background: black;
+		border-radius: 100%;
+	}
+	80%{
+
+		transform: scale(1);
+		opacity: 1;
+	}
+	94%{
+		
+	}
+	100%{
+		opacity: 0;
+		border-radius: 100%;
+		
+	}
+}
+@keyframes roda-quadrado{
+	10%{
+        
+		transform: rotate(36deg);
+
+	}
+
+	20%{
+		transform: rotate(72deg);
+
+	}
+
+	30%{
+		transform: rotate(108deg);
+
+	}
+
+	40%{
+		transform: rotate(144deg);
+
+	}
+
+	50%{
+		transform: rotate(180deg);
+
+	}
+
+	60%{
+		transform: rotate(216deg);
+
+	}
+
+	70%{
+		transform: rotate(252deg);
+
+	}
+
+	80%{
+		transform: rotate(288deg);
+
+	}
+	90%{
+		transform: rotate(324deg);
+
+	}
+	100%{
+        
+		transform: rotate(360deg);
+	}
+
+	
+
+	
+
+}
+@keyframes quadrado-3d{
+    10%{
+        transform: rotate3d(0,1,0, 36deg); 
+    }
+     20%{
+        transform: rotate3d(0,1,0, 72deg); 
+    }
+     30%{
+        transform: rotate3d(0,1,0, 108deg); 
+    }
+     40%{
+        transform: rotate3d(0,1,0, 154deg); 
+    }
+     50%{
+        transform: rotate3d(0,1,0, 180deg); 
+    }
+     60%{
+        transform: rotate3d(0,1,0, 216deg); 
+    }
+     70%{
+        transform: rotate3d(0,1,0, 252deg); 
+    }
+     80%{
+        transform: rotate3d(0,1,0, 288deg); 
+    }
+     90%{
+        transform: rotate3d(0,1,0, 324deg); 
+    }
+     100%{
+        transform: rotate3d(0,1,0, 360deg); 
+    }
+    
+}
+/*Comentarios Explicados Imagem*/
+@keyframes listrado{
+   0%{  	  
+      
+   }
+   50%{
+   	  
+   	  transform: scale(1.02);	
+   }
+   100%{
+   	  		
+   }
+}
+/*Jquery seção*/
+@keyframes movejq{
+	0%{
+		width: 15em;
+		height:20vh;
+
+	}
+	100%{
+		transform: translate(200px,0);
+	}
+
+}
+@keyframes cresce{
+	0%{
+		width: 15em;
+		height:20vh;
+		transform: scale(1);
+
+	}
+	100%{
+		transform: scale(2);
+	}
+
+}

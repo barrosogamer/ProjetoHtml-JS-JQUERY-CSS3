@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='css/eu.css'>
+    <link rel='stylesheet' type='text/css' href='css/contato.css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<header class="luz">
+    <div class='perfil'>
+        <img src='img/eu.jpg'>
+        <h1 id='nome'>Gabriel Barreto</h1>
+        <h2><strong>Desenvolvedor Front End</strong></h2>
+    </div>
+    <nav>
+        <li class="aba_palavra"><a href="Sobre Mim.html" class="aba_palavra">Home</a></li>
+        <li class="aba_palavra"><a href="Conhecimento.html" class="aba_palavra">Conhecimentos</a></li>
+        <li class="aba_palavra"><a href="contato.html" class="aba_palavra">Contato</a></li>
+    </nav>
+</header>
+
+<body>
+    <section class="s_form">
+        <form id="contato" class="pisca">
+                <label for='nome'>Nome</label>
+                <input type='text' name='nome' id='cnome' pattern="[a-zA-Z]+" placehoder='Digite seu nome' />
+                <p id='n_erro'></p>
+
+                <label for='email'>Email</label>
+                <input type='email' name='email' id='cemail' placehoder='Digite seu email' />
+                <p id='e_erro'></p>
+
+                <label for='telefone'>Telefone/Celular</label><BR>
+                <input name='telefone' type="tel" maxlength="2" pattern="[0-9]+" class="fone" placeholder="DDD" id='ddd' />
+                <input name='telefone' type="tel" maxlength="9" pattern="[0-9]+" class='fone' placeholder="Numero" id='numero' /><BR>
+                <p id='dn_erro'></p>
+                <ul id='mensagens-erro'></ul>
+                <label for='estados-brasil'>Estados</label>
+                <select id='estados' name="estados">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select><BR>
+                <label for='cidade'>Cidade</label>
+                <input type="text" name='cidade' pattern="[a-zA-Z]+" placeholder="Cidade" id='cidade' />
+                <p id='ci_erro'></p>
+                <label for="assunto">Assunto</label><br>
+                <textarea name="assunto" id="textarea" cols='90' rows='10'></textarea>
+                
+               <button id='b_form' type="button">Enviar</button> 
+        </form>
+    </section>
+    <footer>
+    <h4>Gabriel Barreto 2019 - Dking Productions</h4>
+</footer>
+</body>
+<script src="js/inputs.js"></script>
+<script src='js/jquery.js'></script>
+<script src='js/valida.js'></script>
+
+</html>

@@ -1,0 +1,245 @@
+/*corpo*/
+*{
+    margin:0 auto; 
+}
+body{
+    
+    font-family: 'Raleway', sans-serif;
+    font-size:1em;
+    width: 100%;
+}
+p{
+    text-indent: 1em;
+    line-height: 2em;
+}
+/*Cabeçalho*/
+
+header{
+    background-image: linear-gradient(#363636,#8DB6CD,#27408B);
+    height: 36em;
+    width: 100%;
+
+
+}
+.perfil{
+    padding: 1em;
+    text-align: center;
+    animation: escala 3s;
+    
+}
+header img{
+    height: 15em;
+    border-radius: 50%;
+    animation: aparece 3s ;
+}
+
+/*ABAS*/
+nav{
+    transition: 0.3s;
+    animation: animaaba 2s;
+    width: 40%;
+    height: 4vh;
+    text-align: center;
+    padding: 1em;
+    background: #00688B;
+
+}
+nav li {
+
+    border-radius: 50px 50px 50px 50px;
+    padding: 0.4em;
+    color: white;
+    display: inline-block;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+strong {
+    color: white;
+    font-weight: 400;
+}
+
+/*Conteudo*/
+main{
+    position: relative;
+    margin: auto;
+    width: 95%;
+    box-shadow: 0 0 5px black;
+}
+section{
+    padding: 2em;
+    margin: auto;
+    width: 80%;
+    height: 10em;
+}
+h1,h2,h3{
+    padding: 1em;
+}
+#nome{
+    animation: mudapalavra 2s ease-in;
+    transition: 0.3s;
+    color: #fff;
+}
+
+
+/*Tabela*/
+.tabela{
+    
+    height: 40em;
+    width: 80%;
+   
+}
+
+.aba_palavra:hover{
+    color: #90EE90;
+    animation: palavradanca 2s;
+    animation-iteration-count: infinite;
+}
+table{
+   width: 90%;
+   border: 0.2em black solid;
+    
+}
+tr{
+    border: 0.5em black solid;
+}
+th{
+    box-shadow: 0 0 0.3em black;
+    padding: 2em;
+    background-color: #6C7B8B;
+    color:white;
+}
+
+td{
+    box-shadow: 0 0 0.3em black; 
+    padding: 2em;
+}
+.t-web th:nth-of-type(1){
+    padding: 0 3em 0 3em;
+}
+
+/*Rodapé*/
+footer{
+    box-shadow: 0 0 1em black;
+    color:white;
+    width: 100%;
+    padding: 1em;
+    height: 1.5em;
+    background-color: black;
+    bottom: 0;
+    position:fixed;
+
+}
+.box{
+    opacity: 0;
+    background-color: #fff;
+    transform: scale(0.5);
+    transition: .3s all ease-in-out;
+    border-radius: 1em;
+}
+.box-cresce{
+    opacity: 1;
+    
+    transform: scale(1);
+    transition: 2s ease-in;
+    animation: cresce 2s ease-in-out;
+    
+    
+}
+.luz{
+   animation: luz 2s ease-in;
+   transition: .3s;
+   background: black;
+}
+/*Animações*/
+@keyframes aparece{
+    0%{
+        opacity: .1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes escala{
+    0%{
+        transform: scale(0.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes cresce{
+    0%{
+        transform: scale(0.6);
+        
+        
+        
+    }
+    70%{
+        transform: scale(1.1);
+        background-image: radial-gradient(rgba(256,256,256,.0),rgba(211,211,211,.0),rgba(256,256,256,.0));
+        
+       
+    }
+    100%{
+        
+        transform: scale(1);
+        
+        
+    }
+}
+
+@keyframes luz{
+    0%{
+       background:#fff;
+    }
+    50%{
+        background:#C1CDC1; 
+    }
+    100%{
+        background:#000;
+    }
+}
+@keyframes mudapalavra{
+     0%{
+       color:#000;
+    }
+    50%{
+        color:#C1CDC1; 
+    }
+    100%{
+        color:#fff;
+    }
+}
+@keyframes animaaba{
+    0%{
+        width: 10%;
+        font-size: 0.1em;
+        border-radius: 6em;
+        opacity: .1;
+    }
+    50%{
+        width: 50%;
+        opacity: .8;
+    }
+    100%{
+        width: 40%;
+    }
+
+}
+@keyframes palavradanca{
+      25%{
+      transform:rotate(-25deg);
+    }
+      50%{
+        transform: rotate(0);
+      }
+      75%{
+        transform: rotate(25deg);
+      }
+
+}

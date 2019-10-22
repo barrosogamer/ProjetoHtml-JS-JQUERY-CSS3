@@ -1,0 +1,40 @@
+header {
+  background-color: #017338;
+  height: 60px;
+  padding: 0.5em;
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+
+header .trapezoid-search {
+  margin:0 auto;
+  width:30%;
+  padding:20px;
+  background:#017338;
+  position:relative;
+}
+
+header .trapezoid-search:after,
+header .trapezoid-search:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  position:absolute;
+  top:-47px;
+  background:#017338;
+  z-index:-1;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow:0 0 5px -1px rgba(0,0,0,0.5);
+  width:100px;
+  height:100px;
+}
+
+header .trapezoid-search:after {
+  right:-50px;
+}
+
+header .trapezoid-search:before {
+  left:-50px; 
+}
